@@ -1,6 +1,6 @@
 env/
 frontend/node_modules/
-notes/migrations/*
-notes_project/__pycache__/*
+migrations/
+__pycache__/
 
 
