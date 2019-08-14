@@ -108,7 +108,33 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CORS_ORIGIN_WHITELIST = [
+        "http://127.0.0.1:8081",
+        "http://localhost",
+        "http://127.0.0.1:8000",
+        "http://127.0.0.1:51556",
+]
 
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
