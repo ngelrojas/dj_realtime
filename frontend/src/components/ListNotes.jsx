@@ -1,21 +1,20 @@
 import React from 'react'
-import { ListGroup, ListGroupItem } from 'reactstrap'
+import {ListGroup, ListGroupItem} from 'reactstrap'
+import {Note} from './Note';
 
-const ListNotes = ({ notes, handleItemClick }) => {
+
+export const ListNotes = ({notes, handleItemClick}) => {
     let notes_list = notes.map((note) =>{
-        return (
+        return(
             <ListGroupItem key={note.id} href="#" onClick={(id) => handleItemClick(note.id)}>
-                <p>{note.title}</p> 
+                
+                <Note title={note.title} />
             </ListGroupItem>
         ) 
     })
-
     return(
         <ListGroup>
             {notes_list} 
         </ListGroup>
     )
 }
-
-export default ListNotes
-

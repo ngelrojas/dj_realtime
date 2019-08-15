@@ -2,6 +2,6 @@ env/
 frontend/node_modules/
 frontend/package-lock.json
 migrations/
-__pycache__/
+notes_project/__pycache__/**
 
 
